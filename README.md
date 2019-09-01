@@ -1,14 +1,6 @@
 # Web3 RPC client for High Performance Blockchain Node
 
-This Ruby Gem is used to connect and communicate with a High Performance Blockchain node (ghpb) using the RPC interface.
-
-What you can do using this GEM:
-
-  - use Web3 HPB interface methods to read blocks, transactions 
-  - parse transaction method calls according to ABI
-  - parse transaction logs according to ABI
-  - parse contract creation arguments accroding to ABI
-  - list internal transaction using parity extended trace JSONRPC API
+This Ruby Gem is used to connect and communicate with a High Performance Blockchain node using the RPC interface.
 
 
 ## Installation
