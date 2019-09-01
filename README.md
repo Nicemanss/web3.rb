@@ -23,9 +23,9 @@ To install this gem onto your local machine, run:
 To test the installation, run:
 # ruby example.rb
 
-You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+You can also run the following command for an interactive prompt that will allow you to experiment:
+# bin/console
 ```
-
 
 
 ## Usage
