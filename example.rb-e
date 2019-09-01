@@ -1,4 +1,4 @@
-require 'web3/hpb'
+require '.web3/hpb'
 
 node = "node.myhpbwallet.com"
 account = "0xb0617bf785b4ce32a00bdffc7e093ad82c2e0925"

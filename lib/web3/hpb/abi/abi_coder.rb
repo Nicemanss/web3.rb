@@ -1,9 +1,9 @@
 # -*- encoding : ascii-8bit -*-
 
-require './lib/web3/hpb/abi/type'
-require './lib/web3/hpb/abi/constant'
-require './lib/web3/hpb/abi/exceptions'
-require './lib/web3/hpb/abi/utils'
+require 'web3/hpb/abi/type'
+require 'web3/hpb/abi/constant'
+require 'web3/hpb/abi/exceptions'
+require 'web3/hpb/abi/utils'
 
 module Web3::Hpb::Abi
 
