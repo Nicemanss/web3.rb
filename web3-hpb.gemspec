@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Web3 client to connect to HPB node by RPC.}
   spec.description   = %q{Calling RPC methods of HPB node with Ruby.}
-  spec.homepage      = "https://github.com/Nicemanss/web3-hpb"
+  spec.homepage      = "https://github.com/Nicemanss/web3.rb"
   spec.license       = "MIT"
 
 
