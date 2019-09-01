@@ -1,0 +1,26 @@
+PATH
+  remote: .
+  specs:
+    web3-hpb (0.2.16)
+      digest-sha3 (~> 1.1.0)
+      rlp (~> 0.7.3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    digest-sha3 (1.1.0)
+    minitest (5.11.3)
+    rake (10.5.0)
+    rlp (0.7.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.14)
+  minitest (~> 5.0)
+  rake (~> 10.0)
+  web3-hpb!
+
+BUNDLED WITH
+   1.14.0
