@@ -3,6 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 set -vx
 
+sudo apt-get install ruby gem -y
 gem install bundler -v 1.14
 gem install digest-sha3 -v '1.1.0' --  --with-cflags=\"-Wno-format-security\"
 bundle install
