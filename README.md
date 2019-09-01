@@ -30,6 +30,8 @@ You can also run the following command for an interactive prompt that will allow
 
 ## Usage
 
+https://github.com/Nicemanss/web3.rb/blob/master/example.rb is a basic example that could get you started.
+
 ### Connect
 
 Connecting to local node ( or by SSH Tunnel )
