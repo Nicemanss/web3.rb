@@ -3,8 +3,6 @@ module Web3
 
     class NetModule
 
-      include Web3::Net::Utility
-
       PREFIX = 'net_'
 
       def initialize web3_rpc
