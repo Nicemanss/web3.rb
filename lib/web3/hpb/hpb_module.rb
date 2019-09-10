@@ -32,16 +32,15 @@ module Web3
         convert_to_hpb ? wei_to_hpb(wei) : wei
       end
 
-      def getBlockByNumber block, full = true, convert_to_object = true
-        resp = @web3_rpc.request("#{PREFIX}#{__method__}", [hex(block), full])
-        convert_to_object ? Block.new(resp) : resp
-      end
-
       def blockNumber
         from_hex @web3_rpc.request("#{PREFIX}#{__method__}")
       end
       
       def syncing
+        resp = @web3_rpc.request("#{PREFIX}#{__method__}")
+      end
+      
+      def mining
         resp = @web3_rpc.request("#{PREFIX}#{__method__}")
       end
 
