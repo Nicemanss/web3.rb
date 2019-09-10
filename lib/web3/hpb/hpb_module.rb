@@ -11,6 +11,18 @@ module Web3
         @web3_rpc = web3_rpc
       end
 
+      def version
+        from_hex @web3_rpc.request("net_#{__method__}")
+      end
+
+      def listening
+        from_hex @web3_rpc.request("net_#{__method__}")
+      end
+
+      def peerCount
+        from_hex @web3_rpc.request("net_#{__method__}")
+      end      
+      
       def getBalance address, block = 'latest', convert_to_hpb = true
         wei = @web3_rpc.request("#{PREFIX}#{__method__}", [address, block]).to_i 16
         convert_to_hpb ? wei_to_hpb(wei) : wei
