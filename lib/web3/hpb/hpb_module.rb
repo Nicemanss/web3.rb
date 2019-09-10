@@ -11,6 +11,10 @@ module Web3
         @web3_rpc = web3_rpc
       end
 
+      def newAccount password
+        resp = @web3_rpc.request("personal_#{__method__}", [password])
+      end
+      
       def version
         resp = @web3_rpc.request("net_#{__method__}")
       end
@@ -35,6 +39,10 @@ module Web3
 
       def blockNumber
         from_hex @web3_rpc.request("#{PREFIX}#{__method__}")
+      end
+      
+      def syncing
+        resp = @web3_rpc.request("#{PREFIX}#{__method__}")
       end
 
       def getTransactionByHash tx_hash
