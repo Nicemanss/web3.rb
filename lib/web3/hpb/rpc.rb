@@ -45,7 +45,7 @@ module Web3
 
           body = JSON.parse(response.body)
 
-          if body['result']
+          if body['result'] || body['result'] == false
             body['result']
           elsif body['error']
             raise "Error #{@uri.to_s} #{body['error']} on request #{@uri.to_s} #{request.body}"
