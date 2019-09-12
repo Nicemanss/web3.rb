@@ -12,19 +12,19 @@ module Web3
       end
 
       def newAccount password
-        resp = @web3_rpc.request("personal_#{__method__}", [password])
+        @web3_rpc.request("personal_#{__method__}", [password])
       end
       
       def version
-        resp = @web3_rpc.request("net_#{__method__}")
+        @web3_rpc.request("net_#{__method__}")
       end
 
       def listening
-        resp = @web3_rpc.request("net_#{__method__}")
+        @web3_rpc.request("net_#{__method__}")
       end
 
       def peerCount
-        resp = @web3_rpc.request("net_#{__method__}")
+        @web3_rpc.request("net_#{__method__}")
       end
       
       def getBalance address, block = 'latest', convert_to_hpb = true
@@ -37,11 +37,11 @@ module Web3
       end
       
       def syncing
-        resp = @web3_rpc.request("#{PREFIX}#{__method__}")
+        @web3_rpc.request("#{PREFIX}#{__method__}")
       end
       
       def mining
-        resp = @web3_rpc.request("#{PREFIX}#{__method__}")
+        @web3_rpc.request("#{PREFIX}#{__method__}")
       end
 
       def contract abi
