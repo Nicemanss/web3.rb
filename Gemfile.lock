@@ -10,7 +10,7 @@ GEM
   specs:
     digest-sha3 (1.1.0)
     minitest (5.11.3)
-    rake (10.5.0)
+    rake (13.0.1)
     rlp (0.7.3)
 
 PLATFORMS
@@ -19,7 +19,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.14)
   minitest (~> 5.0)
-  rake (~> 10.0)
+  rake (~> 13.0)
   web3-hpb!
 
 BUNDLED WITH
